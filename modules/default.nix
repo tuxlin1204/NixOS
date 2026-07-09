@@ -9,6 +9,7 @@ in
     ./core/boot.nix
     ./core/bash.nix
     ./core/zsh.nix
+    ./core/fish.nix
     ./core/starship.nix
     ./core/fonts.nix
     ./core/hardware.nix
@@ -47,6 +48,8 @@ in
     ./programs/media/mpv
     ./programs/misc/tlp
     ./programs/misc/lact # GPU fan, clock and power configuration
+    ./programs/screenshot/flameshot
+    ./programs/passwords/keepassxc
   ]
   ++ lib.optional (vars.games == true) ./core/games.nix;
 }

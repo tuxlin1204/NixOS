@@ -24,6 +24,12 @@
       blocked_install_message = "Addon is not added in the nix config";
       installation_mode = "blocked";
     };
+    "keepassxc-browser@keepassxc.org" = {
+      private_browsing = true;
+      default_area = "navbar";
+      installation_mode = "force_installed";
+      install_url = "https://addons.mozilla.org/firefox/downloads/latest/keepassxc-browser/latest.xpi";
+    };
     "uBlock0@raymondhill.net" = {
       private_browsing = true;
       default_area = "navbar";

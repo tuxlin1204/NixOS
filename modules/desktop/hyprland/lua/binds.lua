@@ -76,14 +76,13 @@ hl.bind(mainMod .. " + CTRL + C", hl.dsp.exec_cmd("hyprpicker --autocopy --forma
 
 -- Window manager
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(launcher .. " drun")) -- launch desktop applications
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(launcher .. " drun")) -- launch desktop applications
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(launcher .. " wallpaper")) -- launch wallpaper switcher
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(launcher .. " emoji")) -- launch emoji picker
 hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd(launcher .. " tmux")) -- launch tmux sessions
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(launcher .. " games")) -- game launcher
 -- hl.bind(mainMod .. " + tab", hl.dsp.exec_cmd(launcher .. " window")) # switch between desktop applications
 -- hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(launcher .. " file")) # brrwse system files
-hl.bind(mainMod .. " + ALT + K", hl.dsp.exec_cmd(keyboardswitch)) -- change keyboard layout
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(keyboardswitch)) -- change keyboard layout
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("swaync-client -t -sw")) -- swayNC panel
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("swaync-client -t -sw")) -- swayNC panel
 hl.bind(mainMod .. " + ALT + G", hl.dsp.exec_cmd(gamemode)) -- disable hypr effects for gamemode
@@ -91,6 +90,7 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipmanager)) -- Clipboard Manager
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(rofimusic)) -- online music
 
 -- Screenshot/Screencapture
+hl.bind("PrtSc", "exec, flameshot gui")
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(screen_record .. " a")) -- Screen Record (area select)
 hl.bind(mainMod .. " + CTRL + R", hl.dsp.exec_cmd(screen_record .. " m")) -- Screen Record (monitor select)
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(screenshot .. " s")) -- drag to snip an area / click on a window to print it

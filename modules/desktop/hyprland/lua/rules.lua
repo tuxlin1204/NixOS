@@ -319,3 +319,8 @@ hl.window_rule({
 	match = { class = "^(eog)$" },
 	float = true,
 })
+-- FreeRDP
+hl.window_rule({
+	match = { class = "^(xfreerdp|xfreerdp3)$" },
+	workspace = "3 silent",
+})

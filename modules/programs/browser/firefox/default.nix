@@ -7,7 +7,7 @@
 {
   home-manager.sharedModules = [
     (_: {
-      programs.firefox = {
+ programs.firefox = {
         enable = true;
         policies = import ./policies.nix { inherit lib; };
         languagePacks = [

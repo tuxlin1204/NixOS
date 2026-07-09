@@ -1,5 +1,5 @@
 {
-  username = "railgun"; # auto-set with install.sh, live-install.sh, and rebuild scripts.
+  username = "admin"; # auto-set with install.sh, live-install.sh, and rebuild scripts.
 
   # Desktop Environment
   desktop = "hyprland"; # hyprland, i3, gnome, plasma6
@@ -12,25 +12,25 @@
   hyprlockWallpaper = "galaxy.webp";
 
   # Default Applications
-  terminal = "kitty"; # kitty, alacritty, wezterm
+  terminal = "alacritty"; # kitty, alacritty, wezterm
   editor = "nixvim"; # nixvim, vscode, helix, doom-emacs, nvchad, neovim
-  browser = "zen-beta"; # zen-beta, firefox, floorp
+  browser = "firefox"; # zen-beta, firefox, floorp
   fileManager = "yazi"; # yazi, lf, thunar
   shell = "zsh"; # zsh, bash
   games = true; # Enable/Disable gaming module
 
   # Hardware
-  hostname = "Singularity";
+  hostname = "admin";
   videoDriver = "nvidia"; # nvidia, amdgpu, intel
   nvidiaChannel = "legacy_580"; # stable, latest, beta, legacy_xxx
   bluetoothSupport = false; # Whether your motherboard supports bluetooth
   batterySupport = false; # Whether device has a battery (laptop)
 
   # Localization
-  timezone = "Europe/London";
-  locale = "en_GB.UTF-8";
+  timezone = "Europe/Moscow";
+  locale = "en_EN.UTF-8";
   clock24h = true;
-  kbdLayout = "gb";
+  kbdLayout = "en,ru";
   kbdVariant = "extd";
   consoleKeymap = "uk";
   capslockAsESC = false;

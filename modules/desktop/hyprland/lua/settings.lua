@@ -4,7 +4,7 @@ hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("GDK_BACKEND", "wayland,x11,*")
 hl.env("NIXOS_OZONE_WL", "1")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
-hl.env("MOZ_ENABLE_WAYLAND", "1")
+hl.env("MOZ_ENABLE_WAYLAND", "0")
 hl.env("OZONE_PLATFORM", "wayland")
 hl.env("EGL_PLATFORM", "wayland")
 hl.env("CLUTTER_BACKEND", "wayland")
@@ -24,6 +24,8 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd(bar)
 	hl.exec_cmd("hypridle")
 	hl.exec_cmd("swaync")
+    hl.exec_cmd("keepassxc")
+	hl.exec_cmd("flameshot")
 	hl.exec_cmd("nm-applet --indicator")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store") -- clipboard store text data
 	hl.exec_cmd("wl-paste --type image --watch cliphist store") -- clipboard store image data
@@ -36,7 +38,7 @@ hl.config({
 	input = (function()
 		local t = {
 			kb_layout = kbdLayout .. ",ru",
-			kb_variant = kbdVariant .. ",",
+			kb_variant = kbdVariant .. ",EU",
 			repeat_delay = 275,
 			repeat_rate = 35,
 			numlock_by_default = true,
