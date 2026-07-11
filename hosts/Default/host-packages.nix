@@ -6,7 +6,7 @@
     godot # For game development
     proton-vpn # VPN
     github-desktop
-    # pokego # Overlayed
+    pokego # Overlayed
 
     # All-in-one front-end for emulators 
     (retroarch.withCores (cores: with cores; [
