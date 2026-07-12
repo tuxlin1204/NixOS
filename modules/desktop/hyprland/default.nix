@@ -19,6 +19,7 @@ in
     ./programs/rofi
     ./programs/hypridle
     ./programs/hyprlock
+    ./programs/vicinae
   ]
   ++ optional (bar != "hyprpanel" && bar != "wayle") ./programs/swaync;
 

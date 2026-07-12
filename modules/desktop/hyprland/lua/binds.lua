@@ -75,7 +75,7 @@ hl.bind("CONTROL + ALT + M", hl.dsp.exec_cmd(term .. ' --class "microfetch" --ho
 hl.bind(mainMod .. " + CTRL + C", hl.dsp.exec_cmd("hyprpicker --autocopy --format=hex")) -- Colour Picker
 
 -- Window manager
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(launcher .. " drun")) -- launch desktop applications
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(" vicinae toggle")) -- launch desktop applications
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(launcher .. " wallpaper")) -- launch wallpaper switcher
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(launcher .. " emoji")) -- launch emoji picker
 hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd(launcher .. " tmux")) -- launch tmux sessions
@@ -90,13 +90,13 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipmanager)) -- Clipboard Manager
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(rofimusic)) -- online music
 
 -- Screenshot/Screencapture
-hl.bind("PrtSc", "exec, flameshot gui")
-hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(screen_record .. " a")) -- Screen Record (area select)
-hl.bind(mainMod .. " + CTRL + R", hl.dsp.exec_cmd(screen_record .. " m")) -- Screen Record (monitor select)
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(screenshot .. " s")) -- drag to snip an area / click on a window to print it
-hl.bind(mainMod .. " + CTRL + P", hl.dsp.exec_cmd(screenshot .. " sf")) -- frozen screen, drag to snip an area / click on a window to print it
-hl.bind(mainMod .. " + print", hl.dsp.exec_cmd(screenshot .. " m")) -- print focused monitor
-hl.bind(mainMod .. " + ALT + P", hl.dsp.exec_cmd(screenshot .. " p")) -- print all monitor outputs
+hl.bind("print", hl.dsp.exec_cmd("flameshot gui"))
+-- hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(screen_record .. " a")) -- Screen Record (area select)
+-- hl.bind(mainMod .. " + CTRL + R", hl.dsp.exec_cmd(screen_record .. " m")) -- Screen Record (monitor select)
+-- hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(screenshot .. " s")) -- drag to snip an area / click on a window to print it
+-- hl.bind(mainMod .. " + CTRL + P", hl.dsp.exec_cmd(screenshot .. " sf")) -- frozen screen, drag to snip an area / click on a window to print it
+-- hl.bind(mainMod .. " + print", hl.dsp.exec_cmd(screenshot .. " m")) -- print focused monitor
+-- hl.bind(mainMod .. " + ALT + P", hl.dsp.exec_cmd(screenshot .. " p")) -- print all monitor outputs
 
 -- to switch between windows in a floating workspace
 hl.bind(mainMod .. " + Tab", hl.dsp.window.cycle_next())

@@ -23,8 +23,8 @@
   hostname = "admin";
   videoDriver = "nvidia"; # nvidia, amdgpu, intel
   nvidiaChannel = "legacy_580"; # stable, latest, beta, legacy_xxx
-  bluetoothSupport = true; # Whether your motherboard supports bluetooth
-  batterySupport = true; # Whether device has a battery (laptop)
+  bluetoothSupport = false; # Whether your motherboard supports bluetooth
+  batterySupport = false; # Whether device has a battery (laptop)
 
   # Localization
   timezone = "Europe/Moscow";
