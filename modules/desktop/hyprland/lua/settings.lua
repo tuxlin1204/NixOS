@@ -37,8 +37,8 @@ end)
 hl.config({
 	input = (function()
 		local t = {
-			kb_layout = kbdLayout .. ",ru",
-			kb_variant = kbdVariant .. ",EU",
+			kb_layout = kbdLayout .. "us,ru",
+			kb_variant = kbdVariant .. ",",
 			repeat_delay = 275,
 			repeat_rate = 35,
 			numlock_by_default = true,
