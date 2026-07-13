@@ -114,8 +114,8 @@
       templates = import ./dev-shells;
       formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.nixfmt-tree);
       nixosConfigurations = {
-        Default = mkHost "Default";
-        admin = mkHost "admin";
+        Workstation = mkHost "Workstation";
+        Laptop = mkHost "Laptop";
       };
     };
 }
