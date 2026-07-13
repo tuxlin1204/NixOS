@@ -7,7 +7,8 @@
     proton-vpn # VPN
     github-desktop
     pokego # Overlayed
-
+    flameshot
+    keepassxc
     # All-in-one front-end for emulators 
     (retroarch.withCores (cores: with cores; [
       # citra # Nintendo - 3DS
