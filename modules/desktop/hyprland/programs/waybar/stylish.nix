@@ -53,6 +53,7 @@ in
               "custom/right_div-4"
               "network"
               "bluetooth"
+              "hyprland/languag"
               "custom/system_update"
               "custom/right_div-5"
             ];
@@ -112,8 +113,7 @@ in
                   6
                   7
                   8
-                  9
-                  10
+                  9 
                 ];
               };
               on-scroll-up = "hyprctl dispatch workspace +1";

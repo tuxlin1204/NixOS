@@ -43,6 +43,7 @@ in
               "pulseaudio"
               "network"
               "bluetooth"
+              "hyprland/language"
               "tray"
               "battery"
             ];
@@ -165,7 +166,6 @@ in
                   7
                   8
                   9
-                  10
                 ];
               };
             };

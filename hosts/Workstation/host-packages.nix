@@ -9,6 +9,7 @@
     pokego # Overlayed
     flameshot
     keepassxc
+    grim
     # All-in-one front-end for emulators 
     (retroarch.withCores (cores: with cores; [
       # citra # Nintendo - 3DS
